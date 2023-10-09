@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@200;300;400;500&display=swap');
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'AR One Sans', sans-serif;
+            background-color: #e3eff4;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .formulaire {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #00668d;
+            border-radius: 2px;
+            color: rgb(2, 66, 91);
+            margin:10px;
+            max-height: 465px;
+            
+        }
+
+        .formulaire h2 {
+            text-align: center;
+        }
+
+        .formulaire label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .formulaire input[type="text"],
+        .formulaire input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            border-radius: 2px;
+            border: 1px solid rgb(2, 66, 91);
+            outline: none;
+        }
+
+        .formulaire label,
+        .formulaire input[type="radio"] {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .formulaire input[type="submit"] {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 2px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .resultat {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            overflow: scroll;
+            border: 2px solid #00668d;
+            margin: 10px 10px 10px 5px;
+            height: 464px;
+            
+        }
+
+        .resultat h2 {
+            color: rgb(2, 66, 91);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(2, 66, 91);
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: rgb(2, 66, 91);
+            color: white;
+        }
+
+        /* Styles pour les pop-ups */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 2px solid green;
+            z-index: 9999;
+        }
+    
